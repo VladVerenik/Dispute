@@ -1,0 +1,19 @@
+fonts:
+    inputs:
+        - DisputeApp/Resources/Fonts
+    outputs:
+        templateName: swift5
+        output: DisputeApp/Resources/Generated/Fonts.swift
+        params:
+            enumName: Fonts
+
+strings:
+    inputs:
+        - DisputeApp/ru.lproj/Localizable.strings
+    outputs:
+        templateName: structured-swift5
+        output: DisputeApp/Resources/Generated/String.swift
+        params:
+            enumName: Localizable
+            publicAccess: 1
+            noComments: 0
